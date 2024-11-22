@@ -18,8 +18,18 @@ liElement.forEach(element => {
 
 let buttomElemnt = document.querySelector("button")
 buttomElemnt.style.color = "firebrick"
-buttomElemnt.style.fontSize = "24px"
 buttomElemnt.style.borderBlockColor = "grey"
 buttomElemnt.style.borderRadius = "8px"
-buttomElemnt.style.fontWeight = "bold"
 buttomElemnt.style.padding = "10px"
+
+document.querySelector("button").classList.add("small");
+document.querySelector("button").classList.toggle("small");
+
+//  adding attributes 
+document.querySelector("a").setAttribute("href", "https://www.bing.com/");
+
+
+document.querySelector("a").setAttribute("target", "_blank");
+
+document.querySelector("a").textContent = "Go to Bing"
+
