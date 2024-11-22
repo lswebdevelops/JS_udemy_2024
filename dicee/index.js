@@ -15,12 +15,8 @@ let h1_content = document.querySelector("h1");
 
 if (randomNumber1 == randomNumber2) {
   h1_content.textContent = "Draw 📍";
-}
-
-if (randomNumber1 > randomNumber2) {
+} else if (randomNumber1 > randomNumber2) {
   h1_content.textContent = "🚩 Player 1 Wins!";
-}
-
-if (randomNumber1 < randomNumber2) {
+} else {
   h1_content.textContent = "Player 2 Wins! 🚩";
 }
